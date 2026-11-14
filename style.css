@@ -79,7 +79,7 @@ html.js[lang="en"] [data-l="ar"] { display: none !important; }
 .brand:hover { text-decoration: none; }
 .tile { width: 40px; height: 40px; border-radius: 13px; background: var(--tile); border: 1px solid rgba(74, 159, 245, 0.27); display: grid; place-items: center; flex: none; }
 .tile img { width: 24px; height: auto; display: block; }
-.brand .name { display: flex; flex-direction: column; line-height: 1.15; }
+.brand .name { display: flex; flex-direction: column; gap: 3px; line-height: 1.2; }
 .brand .ar-name { font-size: 21px; font-weight: 500; }
 .brand .en-name { font-size: 12px; color: var(--muted); letter-spacing: 0.04em; direction: ltr; }
 .top nav { display: flex; align-items: center; gap: 6px; }
