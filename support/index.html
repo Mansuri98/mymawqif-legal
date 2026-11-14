@@ -1,55 +1,233 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-title-ar="الدعم · موقفي" data-title-en="Support · MyMawqif">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>الدعم · Support · MyMawqif موقفي</title>
-<meta name="description" content="Help and contact for the MyMawqif parking app.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الدعم · Support · موقفي MyMawqif</title>
+<meta name="description" content="Help and contact for MyMawqif (موقفي), the app for paying Muscat street parking by SMS to 90091.">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" type="image/png" href="../brand/icon-64.png">
+<link rel="apple-touch-icon" href="../brand/icon-180.png">
+<link rel="preload" href="../fonts/plex-400.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="../style.css">
+<script src="../site.js"></script>
 </head>
 <body>
-<header>
-  <div class="brand"><span class="mark" aria-hidden="true"></span><span>موقفي · MyMawqif</span></div>
-  <nav><a href="#ar">العربية</a><a href="#en">English</a><a href="../privacy/">الخصوصية · Privacy</a></nav>
+<a class="skip" href="#main" data-l="ar">تخطَّ إلى المحتوى</a><a class="skip" href="#main-en" data-l="en">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../support/" aria-label="موقفي MyMawqif">
+      <span class="tile"><img src="../brand/mark-accent.svg" alt=""></span>
+      <span class="name"><span class="ar-name">موقفي</span><span class="en-name">MyMawqif</span></span>
+    </a>
+    <nav>
+      <a class="link" href="../support/" aria-current="page"><span data-l="ar">الدعم</span><span data-l="en">Support</span></a>
+      <a class="link" href="../privacy/"><span data-l="ar">الخصوصية</span><span data-l="en">Privacy</span></a>
+      <div class="switch" role="group" aria-label="اللغة · Language">
+        <button type="button" data-set-lang="ar" lang="ar">العربية</button>
+        <button type="button" data-set-lang="en" lang="en">English</button>
+      </div>
+    </nav>
+  </div>
 </header>
 
-<main>
-<article id="ar" lang="ar" dir="rtl">
-  <h1>الدعم</h1>
-  <p>راسلنا على <a href="mailto:contact@yasrli.com">contact@yasrli.com</a> ونرد عادةً خلال يومي عمل.</p>
+<!-- ───────────── العربية ───────────── -->
+<div id="ar" data-l="ar" lang="ar" dir="rtl">
+  <section class="hero">
+    <div class="wrap">
+      <img class="glyph" src="../brand/mark-accent.svg" alt="">
+      <p class="eyebrow">مركز المساعدة</p>
+      <h1>كيف يمكننا مساعدتك؟</h1>
+      <p class="lead">إجابات سريعة عن الدفع عبر ٩٠٠٩١، والتذكيرات، وحسابك.</p>
+    </div>
+  </section>
 
-  <h2>كيف أدفع الموقف؟</h2>
-  <p>اختر مركبتك والمدة ثم اضغط «اركن الآن». يُرسل التطبيق رسالة إلى ٩٠٠٩١ من خطك، وتصدر بلدية مسقط التذكرة ويخصم مشغّلك قيمتها من خطك. لا يتعامل «موقفي» مع أموالك.</p>
+  <main id="main" class="wrap">
+    <div class="card contact">
+      <div>
+        <h2>تواصل معنا</h2>
+        <p>راسلنا على <span class="ltr">contact@yasrli.com</span>، ونرد عادةً خلال يومي عمل.</p>
+      </div>
+      <a class="btn" href="mailto:contact@yasrli.com?subject=%D9%85%D9%88%D9%82%D9%81%D9%8A%20%E2%80%94%20%D8%AF%D8%B9%D9%85">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+        راسلنا
+      </a>
+    </div>
 
-  <h2>لم يصل رد من ٩٠٠٩١</h2>
-  <p>افتح تطبيق الرسائل: إن ظهرت «لم يتم التسليم» فتحقق من رصيد شريحتك العُمانية، ومن أن الرسالة أُرسلت من خطك العُماني، ومن قوة الإشارة، ثم حاول مجددًا.</p>
+    <h2 class="section-title">الأسئلة الشائعة</h2>
+    <div class="card faq">
+      <details id="ar-pay" open>
+        <summary>كيف أدفع الموقف؟</summary>
+        <div class="a">
+          <p>اختر مركبتك والمدة، ثم اضغط «اركن الآن». يرسل التطبيق رسالة إلى ٩٠٠٩١ من خطك، فتصدر بلدية مسقط التذكرة ويخصم مشغّلك قيمتها من رصيد خطك.</p>
+          <p>عندما يصل رد ٩٠٠٩١، تظهر تذكرتك في «موقفي» مع عدّاد تنازلي حتى نهاية وقتك.</p>
+        </div>
+      </details>
+      <details id="ar-hours">
+        <summary>متى يكون الموقف مدفوعًا؟</summary>
+        <div class="a">
+          <div class="hours">
+            <div><b>من الأحد إلى الخميس</b>٨:٠٠ – ١٣:٠٠ و ١٦:٠٠ – ٢١:٠٠</div>
+            <div><b>الجمعة والسبت والعطل الرسمية</b>مجانًا</div>
+          </div>
+          <p>في مناطق الحساسات، مثل الخوير والغبرة، تُسجَّل المخالفة تلقائيًا بعد ٥ دقائق من الوقوف، فادفع فور وصولك. وتحقّق دائمًا من اللوحات في الشارع.</p>
+        </div>
+      </details>
+      <details id="ar-cost">
+        <summary>كم يكلّف الموقف عبر «موقفي»؟</summary>
+        <div class="a"><p>تدفع تعرفة الموقف التي تحددها بلدية مسقط فقط، ويخصمها مشغّلك من رصيد خطك. لا يضيف «موقفي» أي رسوم، ولا يتعامل مع أموالك.</p></div>
+      </details>
+      <details id="ar-noreply">
+        <summary>لم يصل رد من ٩٠٠٩١</summary>
+        <div class="a"><p>افتح تطبيق الرسائل. إن ظهرت «لم يتم التسليم» فتحقّق من رصيد شريحتك العُمانية، ومن أن الرسالة أُرسلت من خطك العُماني، ومن قوة الإشارة، ثم حاول مجددًا.</p></div>
+      </details>
+      <details id="ar-credit">
+        <summary>وصلني رد بأن الرصيد غير كافٍ</summary>
+        <div class="a"><p>يعني رد <span class="ltr">«Sorry You have no enough credit»</span> أن رصيد خطك لا يكفي. اشحن رصيدك من تطبيق مشغّلك أو موقعه، ثم أرسل الرسالة نفسها مرة أخرى. يرشدك «موقفي» إلى ذلك عند وصول هذا الرد.</p></div>
+      </details>
+      <details id="ar-extend">
+        <summary>كيف أمدّد وقت الموقف؟</summary>
+        <div class="a">
+          <p>قبل انتهاء وقتك بخمس دقائق يصلك تذكير. اضغط عليه مطولًا ثم «تمديد ٣٠ دقيقة»، أو افتح تذكرتك واضغط «تمديد ٣٠ دقيقة»، ثم أرسل الرسالة.</p>
+          <p>يمكنك إضافة تذكير قبل ١٠ دقائق أو قبل دقيقتين من «حسابي» ← «التنبيهات».</p>
+        </div>
+      </details>
+      <details id="ar-arrival">
+        <summary>ما هو تنبيه الوصول؟</summary>
+        <div class="a"><p>في iPhone، فعّل «ذكّرني عند وصولي إلى منطقة مدفوعة» من «حسابي» ← «التنبيهات»، واسمح بالوصول إلى الموقع «دائمًا». عندما تتوقف في منطقة مدفوعة خلال ساعات الدفع، يذكّرك «موقفي» بالدفع. يبقى موقعك على هاتفك.</p></div>
+      </details>
+      <details id="ar-fines">
+        <summary>المخالفات والتصاريح</summary>
+        <div class="a"><p>لا يعرض «موقفي» المخالفات. للاستعلام عنها أو عن التصاريح، استخدم موقع بلدية مسقط أو تطبيق «بلديتي».</p></div>
+      </details>
+      <details id="ar-delete">
+        <summary>كيف أحذف حسابي؟</summary>
+        <div class="a"><p>من «حسابي» ← «حذف الحساب والبيانات»، اضغط مطولًا. تُمسح كل بياناتك نهائيًا.</p></div>
+      </details>
+    </div>
 
-  <h2>كيف أحذف حسابي؟</h2>
-  <p>من «حسابي» ← «حذف الحساب»، اضغط مطولًا. تُمسح كل بياناتك نهائيًا.</p>
+    <div class="links">
+      <a class="card" href="../privacy/#ar">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8.4 7 10 4-1.6 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <span><b>سياسة الخصوصية</b><span>بياناتك تبقى على هاتفك</span></span>
+      </a>
+      <a class="card" href="https://www.mm.gov.om" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg></span>
+        <span><b>بلدية مسقط</b><span>المخالفات والتصاريح</span></span>
+      </a>
+    </div>
 
-  <p>اقرأ <a href="../privacy/#ar">سياسة الخصوصية</a>. «موقفي» غير تابع لبلدية مسقط.</p>
-</article>
+    <p class="note">«موقفي» غير تابع لبلدية مسقط ولا لأي جهة حكومية.</p>
+  </main>
+</div>
 
-<article id="en" lang="en" dir="ltr">
-  <h1>Support</h1>
-  <p>Email <a href="mailto:contact@yasrli.com">contact@yasrli.com</a>. We usually reply within two working days.</p>
+<!-- ───────────── English ───────────── -->
+<div id="en" data-l="en" lang="en" dir="ltr">
+  <section class="hero">
+    <div class="wrap">
+      <img class="glyph" src="../brand/mark-accent.svg" alt="">
+      <p class="eyebrow">Help centre</p>
+      <h1>How can we help?</h1>
+      <p class="lead">Quick answers about paying through 90091, reminders and your account.</p>
+    </div>
+  </section>
 
-  <h2>How do I pay for parking?</h2>
-  <p>Pick your vehicle and duration, then tap Park now. The app sends a message to 90091 from your line; Muscat Municipality issues the ticket and your operator bills your line. MyMawqif never handles your money.</p>
+  <main id="main-en" class="wrap">
+    <div class="card contact">
+      <div>
+        <h2>Contact us</h2>
+        <p>Email contact@yasrli.com. We usually reply within two working days.</p>
+      </div>
+      <a class="btn" href="mailto:contact@yasrli.com?subject=MyMawqif%20support">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+        Email us
+      </a>
+    </div>
 
-  <h2>90091 didn't reply</h2>
-  <p>Open Messages. If it says "Not Delivered", check the credit on your Omani SIM, that the message went from your Omani line, and your signal, then try again.</p>
+    <h2 class="section-title">Frequently asked questions</h2>
+    <div class="card faq">
+      <details id="en-pay" open>
+        <summary>How do I pay for parking?</summary>
+        <div class="a">
+          <p>Pick your vehicle and duration, then tap Park now. The app sends a message to 90091 from your line; Muscat Municipality issues the ticket and your operator bills your line.</p>
+          <p>When the 90091 reply arrives, your ticket shows in MyMawqif with a countdown to the end of your time.</p>
+        </div>
+      </details>
+      <details id="en-hours">
+        <summary>When is parking paid?</summary>
+        <div class="a">
+          <div class="hours">
+            <div><b>Sunday to Thursday</b>08:00 – 13:00 and 16:00 – 21:00</div>
+            <div><b>Friday, Saturday and public holidays</b>Free</div>
+          </div>
+          <p>In sensor zones such as Al Khuwair and Al Ghubrah, a violation is issued automatically 5 minutes after you park, so pay as soon as you arrive. Always check the street signs.</p>
+        </div>
+      </details>
+      <details id="en-cost">
+        <summary>What does parking with MyMawqif cost?</summary>
+        <div class="a"><p>Only the parking tariff set by Muscat Municipality, which your operator takes from your line's credit. MyMawqif adds no fees and never handles your money.</p></div>
+      </details>
+      <details id="en-noreply">
+        <summary>90091 didn't reply</summary>
+        <div class="a"><p>Open Messages. If it says "Not Delivered", check the credit on your Omani SIM, that the message went from your Omani line, and your signal, then try again.</p></div>
+      </details>
+      <details id="en-credit">
+        <summary>The reply says I don't have enough credit</summary>
+        <div class="a"><p>"Sorry You have no enough credit" means your line's credit is too low. Top up in your operator's app or website, then send the same message again. MyMawqif walks you through it when this reply arrives.</p></div>
+      </details>
+      <details id="en-extend">
+        <summary>How do I extend my parking?</summary>
+        <div class="a">
+          <p>Five minutes before your time ends you get a reminder. Touch and hold it, then tap +30, or open your ticket and tap Extend 30 min, then send the message.</p>
+          <p>You can add reminders 10 or 2 minutes before the end in Account → Reminders.</p>
+        </div>
+      </details>
+      <details id="en-arrival">
+        <summary>What are arrival reminders?</summary>
+        <div class="a"><p>On iPhone, turn on "Remind me when I arrive in a paid zone" in Account → Reminders and allow location access Always. When you stop in a paid zone during paid hours, MyMawqif reminds you to pay. Your location stays on your phone.</p></div>
+      </details>
+      <details id="en-fines">
+        <summary>Fines and permits</summary>
+        <div class="a"><p>MyMawqif doesn't show fines. To check fines or permits, use the Muscat Municipality website or the Baladiyeti app.</p></div>
+      </details>
+      <details id="en-delete">
+        <summary>How do I delete my account?</summary>
+        <div class="a"><p>Account → Delete account &amp; data, then hold the button. All your data is erased for good.</p></div>
+      </details>
+    </div>
 
-  <h2>How do I delete my account?</h2>
-  <p>Account → Delete account, then hold the button. All your data is erased for good.</p>
+    <div class="links">
+      <a class="card" href="../privacy/#en">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8.4 7 10 4-1.6 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <span><b>Privacy policy</b><span>Your data stays on your phone</span></span>
+      </a>
+      <a class="card" href="https://www.mm.gov.om" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg></span>
+        <span><b>Muscat Municipality</b><span>Fines and permits</span></span>
+      </a>
+    </div>
 
-  <p>Read the <a href="../privacy/#en">privacy policy</a>. MyMawqif is not affiliated with Muscat Municipality.</p>
-</article>
-</main>
+    <p class="note">MyMawqif is not affiliated with Muscat Municipality or any government body.</p>
+  </main>
+</div>
 
-<footer><a href="mailto:contact@yasrli.com">contact@yasrli.com</a> · <a href="../privacy/">الخصوصية · Privacy</a></footer>
+<footer>
+  <div class="wrap">
+    <a class="brand" href="../support/" aria-label="موقفي MyMawqif">
+      <span class="tile"><img src="../brand/mark-accent.svg" alt=""></span>
+      <span class="name"><span class="ar-name">موقفي</span><span class="en-name">MyMawqif</span></span>
+    </a>
+    <nav>
+      <a href="../support/"><span data-l="ar">الدعم</span><span data-l="en">Support</span></a>
+      <a href="../privacy/"><span data-l="ar">سياسة الخصوصية</span><span data-l="en">Privacy policy</span></a>
+      <a href="mailto:contact@yasrli.com">contact@yasrli.com</a>
+    </nav>
+    <div class="legal">
+      <span><span class="ltr">© 2026 Yasrli Technology L.L.C.</span></span>
+      <span><span data-l="ar">صُمّم لسائقي مسقط</span><span data-l="en">Made for drivers in Muscat</span></span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
